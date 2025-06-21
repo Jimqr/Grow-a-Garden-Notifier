@@ -6,20 +6,24 @@ This is a Python-based Discord bot designed to monitor stock updates from specif
 
 ## UPDATES: 
 - v1.1.0 (June 17, 2025)
-
+- v1.1.1 (June 21, 2025)
+  
 ---
 
-### 🆕 What's New in v1.1.0
+### 🆕 What's New in v1.1.1
 
-✅ Added support for Discord timestamp formatting (<t:...:R>) conversion.
+✅ Priority Items Separated:
+Moved ```default_priority_items``` and ```high_priority_items``` to a new file: ```notify_items.py```
+→ Makes priority list management cleaner and more maintainable.
 
-✅ Added "Sugar Apple" to high_priority_items.
+🔁 Updated Priority Lists:
+Replaced old items with updated stock alert items:
 
-✅ Enhanced weather alert formatting and cleaned up dynamic box width.
+Default Priority: Now includes Prickly Pear, Bell Pepper, Kiwi, etc.
+High Priority: Now includes Tanning Mirror, Paradise Egg, Feijoa, etc.
 
-✅ Included time logs for stock events.
-
-✅ Minor improvements in code structure and reliability.
+✨ Minor Code Cleanup:
+Imported priority items instead of hardcoding them inside the main script.
 
 ---
 
@@ -30,6 +34,8 @@ This is a Python-based Discord bot designed to monitor stock updates from specif
 - ✅ Colored console output for easy visual tracking.
 - ✅ Lightweight, no database required.
 - ✅ Uses [ntfy.sh](https://ntfy.sh) for push notifications.
+- ✅ Support for Discord timestamp formatting (<t:...:R>) conversion.
+- ✅ Time logs for stock events.
 
 ---
 
