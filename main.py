@@ -3,17 +3,7 @@ import re
 import requests
 from config import DISCORD_TOKEN, CHANNEL_IDS, NTFY_TOPIC
 from datetime import datetime
-
-default_priority_items = [
-    "Nectarine", "Mango", "Grape", "Mushroom", "Pepper", "Cacao",
-    "Beanstalk", "Stone Pillar", "Bird Bath", "Lamp Post",
-    "Tractor", "Lightning Rod", "Godly"
-]
-
-high_priority_items = [
-    "Sugar Apple", "Beanstalk", "Friendship Pot", "Ember Lily", "Hive Fruit", "Master Sprinkler",
-    "Honey Sprinkler", "Bee Egg", "Bug Egg", "Mythical Egg"
-]
+from notify_items import default_priority_items, high_priority_items
 
 color_map = {
     "Carrot": "\033[92m", "Strawberry": "\033[92m", "Blueberry": "\033[92m", "Orange": "\033[92m",
